@@ -39,7 +39,7 @@ EBIRD_LABEL = {
     'accordion': 'Accordion', 'bass_tuba': 'Bass tuba', 'bassoon': 'Bassoon',
     'clarinet': 'Clarinet', 'contrabass': 'Contrabass', 'flute': 'Flure',
     'horn': 'Horn', 'oboe': 'Oboe', 'sax': 'Sax', 'trombone': 'Trombone',
-    'trumpet': 'Trumpet', 'viola': 'Viola', 'violin': 'Violin' 'cello': 'Cello'
+    'trumpet': 'Trumpet', 'viola': 'Viola', 'violin': 'Violin', 'cello': 'Cello'
 }
 
 INV_EBIRD_LABEL = {v: k for k, v in EBIRD_LABEL.items()}
