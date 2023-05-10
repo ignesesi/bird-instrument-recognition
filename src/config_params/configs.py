@@ -20,7 +20,7 @@ def fill_range(letter_start, letter_end, path_fill, dict_val={}):
 
 def get_dict_value(input_dir):
     dict_val = {}
-    path = "small-data-instruments/small_data_kaggle/train_audio"
+    path = "small-data-instruments/data/train_audio"
     dict_val = fill_range('a','z',input_dir/path,dict_val)  
 #    dict_val = fill_range('a','b',input_dir/"birdsong-resampled-train-audio-00",dict_val)
 #    dict_val = fill_range('c','f',input_dir/"birdsong-resampled-train-audio-01",dict_val)
