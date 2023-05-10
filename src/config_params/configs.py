@@ -30,14 +30,14 @@ def get_dict_value(input_dir):
     return dict_val
 
 BIRD_CODE = {
-    'accordion': 0, 'bass_tuba': 1, 'bassoon': 2, 'clarinet': 3, 
+    'accordion': 0, 'tuba': 1, 'bassoon': 2, 'clarinet': 3, 
     'contrabass': 4, 'flute': 5, 'horn': 6, 'oboe': 7, 'sax': 8,
     'trombone': 9, 'trumpet': 10, 'viola': 11, 'violin': 12, 'cello': 13
 }
 
 EBIRD_LABEL = {
-    'accordion': 'Accordion', 'bass_tuba': 'Bass tuba', 'bassoon': 'Bassoon',
-    'clarinet': 'Clarinet', 'contrabass': 'Contrabass', 'flute': 'Flure',
+    'accordion': 'Accordion', 'tuba': 'Tuba', 'bassoon': 'Bassoon',
+    'clarinet': 'Clarinet', 'contrabass': 'Contrabass', 'flute': 'Flute',
     'horn': 'Horn', 'oboe': 'Oboe', 'sax': 'Sax', 'trombone': 'Trombone',
     'trumpet': 'Trumpet', 'viola': 'Viola', 'violin': 'Violin', 'cello': 'Cello'
 }
