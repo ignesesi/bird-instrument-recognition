@@ -88,7 +88,9 @@ class SedDataset(Dataset):
     
     def convert_labels_to_coded(self, num_images, labels):
         coded_labels = np.zeros((num_images,len(self.bird_code)))
+        print("#####################\nLABELS\n", labels)
         for index, temp_label in enumerate(labels):
+            print("#", temp_label, "#")
             label_index = self.bird_code[temp_label]
             coded_labels[:,label_index] = 1
         return torch.from_numpy(coded_labels).float()
