@@ -66,7 +66,7 @@ class SedDataset(Dataset):
             if type(self.root_dir) is dict:
                 #print(self.root_dir)
                 #print(primary_label)
-                file_dir = self.root_dir[primary_label[0].lower()]/f"{primary_label}"/f"{filename.replace('.mp3','.wav')}"
+                file_dir = self.root_dir[primary_label[0]]/f"{primary_label}"/f"{filename.replace('.mp3','.wav')}"
             else:
                 file_dir = self.root_dir/f"{primary_label}"/f"{filename.replace('.mp3','.wav')}"
         else:
@@ -91,7 +91,7 @@ class SedDataset(Dataset):
         #print("#####################\nLABELS\n", labels)
         for index, temp_label in enumerate(labels):
             #print("#", temp_label, "#")
-            label_index = self.bird_code[temp_label.lower()]
+            label_index = self.bird_code[temp_label]
             coded_labels[:,label_index] = 1
         return torch.from_numpy(coded_labels).float()
     
