@@ -64,6 +64,8 @@ class SedDataset(Dataset):
                     all_labels.append(self.inv_ebird_label[ln])
 
             if type(self.root_dir) is dict:
+                print(self.root_dir)
+                print(primary_label)
                 file_dir = self.root_dir[primary_label[0]]/f"{primary_label}"/f"{filename.replace('.mp3','.wav')}"
             else:
                 file_dir = self.root_dir/f"{primary_label}"/f"{filename.replace('.mp3','.wav')}"
